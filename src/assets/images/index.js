@@ -1,0 +1,1 @@
+export const Yosemite = require('./yosemite.jpg');
