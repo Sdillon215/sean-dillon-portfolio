@@ -1,27 +1,64 @@
 body {
-	margin: 0;
+  margin: 0;
   font-family: 'Merriweather', serif;
 }
 
-#wrap {
-	position: relative;
-	overflow: hidden;
+.MuiBox-root .MuiPaper-root {
+  backdrop-filter: blur(2px) saturate(180%);
+    -webkit-backdrop-filter: blur(1px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.85);
 }
 
 section {
-	box-sizing: border-box;
-	position: relative;
-	height: 100vh;
-	overflow: hidden;
-	font-size: 10vmin;
-	padding: 1em;
-	color: hsla(0, 0%, 100%, .8);
+  box-sizing: border-box;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 10vmin;
+  padding-top: 10vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 2vw;
+  color: hsla(0, 0%, 100%, .8);
   background-position: center center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+  font-size: 2vw;
+}
+
+/* .one-container {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: flex-start;
+  } */
+
+.one-item-one {
+  order: 0;
+  /* flex: 0 1 auto; */
+  width: 25vw;
+  align-self: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+.one-item-two {
+  order: 0;
+  /* flex: 0 1 auto; */
+  align-self: flex-end;
+  margin: 0;
+  padding: 0;
 }
 
 #first-section {
-  background-image: url('assets/images/yosemite.jpg');
+  background-image: url('assets/images/yose-night.jpg');
 }
 
 #second-section {
@@ -46,15 +83,15 @@ section {
   justify-content: center;
 }
 
-#indicator > div {
+#indicator>div {
   background-color: white;
-  width:10px;
-  height:10px;
+  width: 10px;
+  height: 10px;
   border-radius: 5px;
   margin: 10px;
   cursor: pointer;
 }
 
-#indicator > div.active {
+#indicator>div.active {
   transform: scale(1.6);
 }

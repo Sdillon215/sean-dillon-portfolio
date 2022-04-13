@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactPageScroller from 'react-page-scroller';
 import Nav from './components/Nav';
+import SectionOne from './components/SectionOne'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
@@ -9,7 +10,7 @@ const theme = createTheme({
       light: '#548c70',
       main: '#1d5e5e',
       dark: '#00341e',
-      contrastText: '#000',
+      contrastText: '#fff',
     },
     secondary: {
       light: '#74b8c7',
@@ -25,8 +26,8 @@ function App() {
     <ThemeProvider theme={theme}>
       <Nav />
       <ReactPageScroller>
-        <section id="first-section">One</section>
-        <section id="second-section">Beautiful</section>
+        <SectionOne />
+        <section id="second-section"><p>Section 2</p></section>
         <section id="third-section">Full-Page</section>
         <section id="fourth-section">Slideshow</section>
       </ReactPageScroller>
