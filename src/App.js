@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactPageScroller from 'react-page-scroller';
 import Nav from './components/Nav';
-import SectionOne from './components/SectionOne'
+import SectionOne from './components/SectionOne';
+import SectionTwo from './components/SectionTwo';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
@@ -33,7 +34,7 @@ function App() {
       <Nav />
       <ReactPageScroller>
         <SectionOne />
-        <section id="second-section"><p>Section 2</p></section>
+        <SectionTwo />
         <section id="third-section">Full-Page</section>
         <section id="fourth-section">Slideshow</section>
       </ReactPageScroller>

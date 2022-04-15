@@ -18,27 +18,7 @@ h2 {
   background-color: rgba(17, 25, 40, 0.85);
 }
 
-section {
-  box-sizing: border-box;
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-  font-size: 10vmin;
-  padding-top: 10vh;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-bottom: 2vw;
-  color: hsla(0, 0%, 100%, .8);
-  background-position: center center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-content: stretch;
-  align-items: flex-start;
-  font-size: 2vw;
-}
+
 
 /* .one-container {
   display: flex;
@@ -80,13 +60,73 @@ section {
   /* border: 1px solid rgba(255, 255, 255, 0.125); */
 }
 
-#first-section {
-  background-image: url('assets/images/yose-night.jpg');
+#section-two {
+  box-sizing: border-box;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 10vmin;
+  color: hsla(0, 0%, 100%, .8);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+  font-size: 2vw;
 }
 
-#second-section {
-  background-image: url('https://source.unsplash.com/jWskS_wLMDo/1920x1080');
+#left-cont {
+  height: 100%;
+  width: 50%;
+  flex-direction: column;
 }
+#left-two-top {
+  background-image: url('assets/images/outer-limits-2.jpg');
+  background-position: center;
+  background-size: cover;
+
+  height: 70%;
+}
+
+#left-two-bottom {
+  height: 30%;
+  color:black;
+}
+#right-two {
+  background-color: rgb(54, 83, 92);
+  width: 50%;
+  height: 100%;
+}
+
+#first-section {
+  background-image: url('assets/images/j-tree.jpg');
+  box-sizing: border-box;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 10vmin;
+  padding-top: 10vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 2vw;
+  color: hsla(0, 0%, 100%, .8);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+  font-size: 2vw;
+}
+
+/* #second-section {
+  background-image: url('https://source.unsplash.com/jWskS_wLMDo/1920x1080');
+} */
 
 #third-section {
   background-image: url('https://source.unsplash.com/O6vaYviRDoo/1920x1080');
