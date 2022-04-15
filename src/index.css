@@ -1,12 +1,21 @@
+html * {
+  font-family: 'Advent pro';
+}
+
 body {
   margin: 0;
-  font-family: 'Merriweather', serif;
+}
+
+p,
+h2 {
+  margin: 0;
+  padding: 0;
 }
 
 .MuiBox-root .MuiPaper-root {
   backdrop-filter: blur(2px) saturate(180%);
-    -webkit-backdrop-filter: blur(1px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.85);
+  -webkit-backdrop-filter: blur(1px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.85);
 }
 
 section {
@@ -40,21 +49,35 @@ section {
     align-items: flex-start;
   } */
 
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
 .one-item-one {
   order: 0;
   /* flex: 0 1 auto; */
-  width: 25vw;
+  width: 22vw;
   align-self: flex-start;
-  padding: 0;
+  padding: 1vw;
   margin: 0;
 }
 
 .one-item-two {
   order: 0;
-  /* flex: 0 1 auto; */
+  width: 50vw;
   align-self: flex-end;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 0;
+  padding: 1vw;
+}
+
+.card {
+  backdrop-filter: blur(1px) saturate(168%);
+  -webkit-backdrop-filter: blur(1px) saturate(168%);
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  /* border: 1px solid rgba(255, 255, 255, 0.125); */
 }
 
 #first-section {

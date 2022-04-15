@@ -19,6 +19,12 @@ const theme = createTheme({
       contrastText: '#000',
     },
   },
+  typography: {
+    fontFamily: [
+      'Advent Pro',
+      'sans-serif',
+    ].join(','),
+  },
 });
 
 function App() {
