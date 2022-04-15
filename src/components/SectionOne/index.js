@@ -2,19 +2,20 @@ import React from 'react';
 import { Portrait } from '../../assets/images';
 
 function SectionOne() {
+  
   return (
     <section id="first-section">
-      <div class="one-item-one card">
+      {/* <div class="one-item-one card">
         <img class="card-img" src={Portrait} />
         <p>
           Hi my name is Sean Dillon.
           I'm a Full Stack Developer!
         </p>
-      </div>
-      <div class="one-item-two card">
-        <h2>About</h2>
+      </div> */}
+      <div id="about-card" class="card">
+        <h2>Hi. I'm Sean.</h2>
         <p>
-          My name is Sean Dillon and I am a Full-Stack Web Developer.
+          My name is Sean Dillon and I am a Full Stack Web Developer.
           I was drawn to this field of work by the ability to work remotely and the freedom that allows.
           My introduction to Web developement started with a boot camp through The University of
           Utah. As I am learning new skills and technologies I am finding a passion in the creative proccess of building web
