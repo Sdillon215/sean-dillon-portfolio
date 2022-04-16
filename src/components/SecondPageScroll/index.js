@@ -27,14 +27,14 @@ function SecondPageScroll() {
         }
     ]
     return (
-        <div class="proj-section">
+        <div className="proj-section">
             <ReactPageScroller>
-                {projects.map((project) => (
-                    <div class="proj-scroll">
+                {/* {projects.map((project) => (
+                    <div className="proj-scroll">
                         <img src={project.img} />
                         <h2>{project.name}</h2>
                     </div>
-                ))}
+                ))} */}
             </ReactPageScroller>
         </div>
     );

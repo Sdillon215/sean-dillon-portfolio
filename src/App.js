@@ -1,8 +1,5 @@
 import React from 'react';
-import ReactPageScroller from 'react-page-scroller';
-import Nav from './components/Nav';
-import SectionOne from './components/SectionOne';
-import SectionTwo from './components/SectionTwo';
+import FullPage from './components/FullPage';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
@@ -22,7 +19,7 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: [
-      'Manrope', 
+      'Manrope',
       'sans-serif',
     ].join(','),
   },
@@ -30,15 +27,9 @@ const theme = createTheme({
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <Nav />
-      <ReactPageScroller>
-        <SectionOne />
-        <SectionTwo />
-        <section id="third-section">Full-Page</section>
-        <section id="fourth-section">Slideshow</section>
-      </ReactPageScroller>
-    </ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <FullPage />
+      </ThemeProvider>
   );
 }
 

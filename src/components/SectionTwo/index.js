@@ -16,7 +16,7 @@ function SectionTwo() {
                     <h2>technologies Used</h2>
                 </div>
             </div>
-            <div class="section-two-cont">
+            <div className="section-two-cont">
                 <div id="right-two">
                     <SecondPageScroll />
                 </div>
