@@ -1,5 +1,6 @@
 import React from 'react';
-// import { Portrait } from '../../assets/images';
+import SecondPageScroll from '../SecondPageScroll';
+
 
 function SectionTwo() {
     return (
@@ -15,8 +16,10 @@ function SectionTwo() {
                     <h2>technologies Used</h2>
                 </div>
             </div>
-            <div id="right-two">
-                that
+            <div class="section-two-cont">
+                <div id="right-two">
+                    <SecondPageScroll />
+                </div>
             </div>
         </section>
     );
