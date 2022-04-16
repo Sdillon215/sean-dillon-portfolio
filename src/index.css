@@ -1,60 +1,88 @@
 html * {
-  font-family: 'Advent pro';
+  font-family: 'Manrope', sans-serif;
 }
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 p,
-h2 {
+h2,
+h3 {
   margin: 0;
   padding: 0;
 }
 
+/* Nav style */
 .MuiBox-root .MuiPaper-root {
   backdrop-filter: blur(2px) saturate(180%);
   -webkit-backdrop-filter: blur(1px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.85);
+
 }
 
+.MuiToolbar-root .MuiTypography-root {
+  font-weight: bold;
+  font-size: 3vw;
+  color: rgb(149, 134, 134);
+}
 
+.MuiToolbar-root .MuiButton-root {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: rgb(149, 134, 134);
+}
 
-/* .one-container {
+/* Section one style */
+#first-section {
+  background-image: url('assets/images/j-tree.jpg');
+  box-sizing: border-box;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
   display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-content: stretch;
-    align-items: flex-start;
-  } */
-
-.card-img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
 }
 
-/* .one-item-one {
-  order: 0;
-  width: 22vw;
-  align-self: flex-start;
-  padding: 1vw;
-  margin: 0;
+#home-title {
+  text-align: center;
+  color: rgb(149, 134, 134);
+  margin-top: 30vh;
 }
 
-.one-item-two {
-  order: 0;
-  width: 50vw;
-  align-self: flex-end;
+#home-title h2 {
+  font-size: 5vw;
+}
+
+#home-title h3 {
+  font-size: 3vw;
+}
+
+.arrow {
+  color: rgb(149, 134, 134);
+  margin-top: auto;
   margin-bottom: 0;
-  padding: 1vw;
-} */
+  padding: 0;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
 
-#about-card {
-  max-width: 50vw;
-  padding: 2vw;
-  color: white;
+.bounce {
+  animation-name: bounce-2;
+  animation-timing-function: ease;
+}
+@keyframes bounce-2 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
 }
 
 .card {
@@ -100,6 +128,7 @@ h2 {
   width: 50%;
   flex-direction: column;
 }
+
 #left-two-top {
   background-image: url('assets/images/outer-limits-2.jpg');
   background-position: center;
@@ -110,36 +139,16 @@ h2 {
 
 #left-two-bottom {
   height: 30%;
-  color:black;
+  color: black;
 }
+
 #right-two {
   background-color: rgb(54, 83, 92);
   width: 50%;
   height: 100%;
 }
 
-#first-section {
-  background-image: url('assets/images/j-tree.jpg');
-  box-sizing: border-box;
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-  font-size: 10vmin;
-  /* padding-top: 10vh;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-bottom: 2vw; */
-  color: hsla(0, 0%, 100%, .8);
-  background-position: center center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: stretch;
-  align-items: center;
-  font-size: 2vw;
-}
+
 
 /* #second-section {
   background-image: url('https://source.unsplash.com/jWskS_wLMDo/1920x1080');

@@ -22,7 +22,7 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: [
-      'Advent Pro',
+      'Manrope', 
       'sans-serif',
     ].join(','),
   },

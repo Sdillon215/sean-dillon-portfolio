@@ -14,9 +14,9 @@ export default function ButtonAppBar() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Sean Dillon
           </Typography>
-          <Button color="inherit">Login</Button>
-          <Button color="inherit">Login</Button>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit">ABOUT</Button>
+          <Button color="inherit">WORK</Button>
+          <Button color="inherit">CONTACT</Button>
         </Toolbar>
       </AppBar>
     </Box>
