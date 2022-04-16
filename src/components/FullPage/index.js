@@ -65,9 +65,10 @@ export default class FullPage extends React.Component {
                             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                                 Sean Dillon
                             </Typography>
-                            <Button key="1" eventkey="0" value="0" onClick={this.handleClick}>About</Button>
-                            <Button key="2" eventkey="1" value="1" onClick={this.handleClick}>About</Button>
-                            <Button key="3" eventkey="2" value="2" onClick={this.handleClick}>About</Button>
+                            <Button value="0" onClick={this.handleClick}>Home</Button>
+                            <Button value="1" onClick={this.handleClick}>About</Button>
+                            <Button value="2" onClick={this.handleClick}>Work</Button>
+                            <Button value="3" onClick={this.handleClick}>Contact</Button>
                         </Toolbar>
                     </AppBar>
                 </Box>
