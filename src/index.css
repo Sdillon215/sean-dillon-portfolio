@@ -1,5 +1,5 @@
 html * {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 body {
@@ -20,6 +20,10 @@ h3 {
   -webkit-backdrop-filter: blur(1px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.85);
 
+}
+
+.MuiPaper-root .MuiToolbar-root {
+  min-height: 8vh;
 }
 
 .MuiToolbar-root .MuiTypography-root {
@@ -79,68 +83,82 @@ h3 {
   animation-name: bounce;
   animation-timing-function: ease;
 }
+
 @keyframes bounce {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-18px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-18px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
-.card {
-  backdrop-filter: blur(2px) saturate(180%);
-  -webkit-backdrop-filter: blur(1px) saturate(180%);
-  background-color: rgba(17, 25, 40, 0.85);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
-}
+/* End Section on style */
 
+/* Section Two Style */
 #section-two {
+  background-color: rgb(7, 102, 136);
   box-sizing: border-box;
   position: relative;
   height: 100vh;
-  overflow: hidden;
-  font-size: 10vmin;
-  color: hsla(0, 0%, 100%, .8);
-  background-position: center center;
-  background-size: cover;
+  padding-top: 8vh;
+
+}
+
+.second-scroll-cont {
+  width: 100vw;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: stretch;
+}
+
+.two-scroll-sect {
+  height: 60vh;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  align-content: stretch;
-  align-items: flex-start;
-  font-size: 2vw;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
 }
 
-/* .proj-section {
- 
+.two-scroll-sect-bottom {
+  height: 32vh;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.about-card {
+  height: 30vw;
+  width: 30vw;
+  min-width: 300px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+/* .bottom-two-scroll {
+  height: 40vh;
+  width: 80vw;
+  margin-top: 5vh;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
 } */
-/* .proj-scroll {
-  width: 45vw;
-} */
-
-.proj-scroll img {
-  width: 90%;
-  height: auto;
-}
-
-.section-two-cont {
-  height: 100%;
-  width: 50%;
-  flex-direction: column;
-}
-
-#left-two-top {
-  background-image: url('assets/images/outer-limits-2.jpg');
-  background-position: center;
-  background-size: cover;
-
-  height: 70%;
-}
-
-#left-two-bottom {
-  height: 30%;
-  color: black;
-}
 
 #right-two {
   background-color: rgb(54, 83, 92);
@@ -183,4 +201,52 @@ h3 {
 
 #indicator>div.active {
   transform: scale(1.6);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1025px) {
+  .about-card {
+    height: 34vw;
+    width: 34vw;
+    min-width: 250px;
+  }
+
+  .MuiToolbar-root .MuiButton-root {
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .about-card {
+    height: 40vw;
+    width: 40vw;
+    min-width: 200px;
+  }
+
+  .MuiToolbar-root .MuiTypography-root {
+    font-size: 3.7vw;
+  }
+
+  .MuiToolbar-root .MuiButton-root {
+    font-size: 2.4vw;
+    /* padding: 2px 4px; */
+    min-width: 50px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .about-card {
+    height: 45vw;
+    width: 45vw;
+    min-width: 150px;
+  }
+
+  .MuiToolbar-root .MuiTypography-root {
+    font-size: 5vw;
+  }
+
+  .MuiToolbar-root .MuiButton-root {
+    font-size: 2.8vw;
+    min-width: 40px;
+  }
 }

@@ -27,16 +27,33 @@ function SecondPageScroll() {
         }
     ]
     return (
-        <div className="proj-section">
+        <>
             <ReactPageScroller>
-                {/* {projects.map((project) => (
-                    <div className="proj-scroll">
-                        <img src={project.img} />
-                        <h2>{project.name}</h2>
+                <section className="second-scroll-cont">
+                    <div>
+                        <div className="two-scroll-sect">
+                            <div className="about-card">
+                            </div>
+                            <div className="about-card">
+                            </div>
+                        </div>
+                        <div className="two-scroll-sect two-scroll-sect-bottom">
+                            right one
+                        </div>
                     </div>
-                ))} */}
+                </section>
+                <section className="second-scroll-cont">
+                    <div>
+                        <div className="two-scroll-sect">
+                            left two
+                        </div>
+                        <div classname="two-scroll-sect two-scroll-sect-bottom">
+                            right two
+                        </div>
+                    </div>
+                </section>
             </ReactPageScroller>
-        </div>
+        </>
     );
 }
 
