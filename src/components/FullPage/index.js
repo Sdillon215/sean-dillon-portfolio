@@ -16,39 +16,22 @@ export default class FullPage extends React.Component {
         this.state = { currentPage: 0 };
     }
 
+    // recieves number from handleClick or page scroller built in funtion sets currentPage state
     handlePageChange = number => {
         console.log(number)
         this.setState({ currentPage: number });
     };
 
+    // gets page number from nav btn click
     handleClick = (e) => {
         e.persist();
         let number;
         number = e.target.value;
+        // call handlePageChange and parse int 
         this.handlePageChange(parseInt(number));
     }
 
-    handleBeforePageChange = number => {
-        console.log(number);
-    };
-
-    getPagesNumbers = () => {
-        const pageNumbers = [];
-
-        for (let i = 1; i <= 3; i++) {
-            pageNumbers.push({
-                key: i,
-                eventkey: i - 1,
-            });
-        }
-
-        console.log([...pageNumbers]);
-        return [...pageNumbers]
-    };
-
     render() {
-        const pagesNumbers = this.getPagesNumbers();
-
         return (
             <React.Fragment>
                 <Box sx={{ flexGrow: 1 }}>
@@ -66,10 +49,8 @@ export default class FullPage extends React.Component {
                 </Box>
                 <ReactPageScroller
                     pageOnChange={this.handlePageChange}
-                    onBeforePageScroll={this.handleBeforePageChange}
-                    customPageNumber={this.state.currentPage}
-                >
-                    <SectionOne  />
+                    customPageNumber={this.state.currentPage}>
+                    <SectionOne />
                     <SectionTwo props={this.state.currentPage} />
                     <SectionThree />
                     <section id="fourth-section">Slideshow</section>
