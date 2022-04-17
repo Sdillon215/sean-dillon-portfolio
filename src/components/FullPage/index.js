@@ -69,8 +69,8 @@ export default class FullPage extends React.Component {
                     onBeforePageScroll={this.handleBeforePageChange}
                     customPageNumber={this.state.currentPage}
                 >
-                    <SectionOne />
-                    <SectionTwo />
+                    <SectionOne  />
+                    <SectionTwo props={this.state.currentPage} />
                     <SectionThree />
                     <section id="fourth-section">Slideshow</section>
                 </ReactPageScroller>

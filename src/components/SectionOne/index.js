@@ -15,7 +15,7 @@ function SectionOne() {
 }
 
 export default SectionOne;
-{/* <div class="one-item-one card">
+/* <div class="one-item-one card">
   <img class="card-img" src={Portrait} />
   <p>
     Hi my name is Sean Dillon.
@@ -33,4 +33,4 @@ export default SectionOne;
     other passions such as climbing and traveling. These passions fuel each other and the result is awesome code and time spent in the most beautiful
     places in the world!
   </p>
-</div> */}
+</div> */
