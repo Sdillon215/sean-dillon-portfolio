@@ -4,7 +4,7 @@ import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrow
 function SectionOne() {
   
   return (
-    <section id="first-section">
+    <section id="first-section" className="first">
       <div id="home-title">
         <h2>SEAN DILLON</h2>
         <h3>Full Stack Developer | Rock Climber | Desert Rat</h3>

@@ -2,9 +2,12 @@ html * {
   font-family: 'Roboto Mono', monospace;
 }
 
-body {
+html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 p,
@@ -38,6 +41,19 @@ h3 {
   color: rgb(149, 134, 134);
 }
 
+.page-contain {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
 /* Section one style */
 #first-section {
   background-image: url('assets/images/j-tree.jpg');
@@ -54,6 +70,7 @@ h3 {
   align-content: stretch;
   align-items: center;
 }
+
 
 #home-title {
   text-align: center;
@@ -97,23 +114,36 @@ h3 {
     transform: translateY(0);
   }
 }
-
-/* End Section on style */
+/* End Section one style */
 
 /* Section Two Style */
+
+.first {
+  position: absolute;
+}
+
 #section-two {
-  background-color: rgb(7, 102, 136);
+  background-image: url('assets/images/yosemite.jpg');
+  height: 100vh;
   box-sizing: border-box;
   position: relative;
-  height: 100vh;
-  padding-top: 8vh;
-
+  padding: 8vh;
+  overflow:hidden;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
 }
 
 .second-scroll-cont {
-  width: 100vw;
-  height: 92vh;
+  width: 80%;
+  height: auto;
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
@@ -122,7 +152,7 @@ h3 {
 }
 
 .two-scroll-sect {
-  height: 60vh;
+  height: 60%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -132,10 +162,10 @@ h3 {
 }
 
 .two-scroll-sect-bottom {
-  height: 32vh;
+  height: 32%;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(17, 25, 40, 0.75);
+  background-color: rgba(81, 108, 157, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
@@ -143,9 +173,10 @@ h3 {
   height: 30vw;
   width: 30vw;
   min-width: 300px;
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(17, 25, 40, 0.75);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  background-color: rgb(63, 15, 111);
+  /* border-radius: 12px; */
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
@@ -180,7 +211,7 @@ h3 {
   background-image: url('https://source.unsplash.com/vPOYZac2hiE/1920x1080');
 }
 
-#indicator {
+/* #indicator {
   position: absolute;
   top: 0px;
   left: 20px;
@@ -201,7 +232,7 @@ h3 {
 
 #indicator>div.active {
   transform: scale(1.6);
-}
+} */
 
 /* Media Queries */
 @media only screen and (max-width: 1025px) {

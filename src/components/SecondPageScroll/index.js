@@ -38,17 +38,44 @@ function SecondPageScroll() {
                             </div>
                         </div>
                         <div className="two-scroll-sect two-scroll-sect-bottom">
-                            right one
+                            bottom
                         </div>
                     </div>
                 </section>
                 <section className="second-scroll-cont">
                     <div>
                         <div className="two-scroll-sect">
-                            left two
+                            <div className="about-card">
+                            </div>
+                            <div className="about-card">
+                            </div>
                         </div>
-                        <div classname="two-scroll-sect two-scroll-sect-bottom">
-                            right two
+                        <div className="two-scroll-sect two-scroll-sect-bottom">
+                            bottom
+                        </div>
+                    </div>
+                </section><section className="second-scroll-cont">
+                    <div>
+                        <div className="two-scroll-sect">
+                            <div className="about-card">
+                            </div>
+                            <div className="about-card">
+                            </div>
+                        </div>
+                        <div className="two-scroll-sect two-scroll-sect-bottom">
+                            bottom
+                        </div>
+                    </div>
+                </section><section className="second-scroll-cont">
+                    <div>
+                        <div className="two-scroll-sect">
+                            <div className="about-card">
+                            </div>
+                            <div className="about-card">
+                            </div>
+                        </div>
+                        <div className="two-scroll-sect two-scroll-sect-bottom">
+                            bottom
                         </div>
                     </div>
                 </section>
@@ -58,3 +85,65 @@ function SecondPageScroll() {
 }
 
 export default SecondPageScroll;
+
+// import React from "react";
+// import ReactPageScroller from 'react-page-scroller';
+// import PageTwoOne from "../PageTwoOne";
+// import PageTwoTwo from "../PageTwoTwo";
+
+
+// export default class SecondPageScroll extends React.Component {
+//     // constructor(props) {
+//     //     super(props);
+//     //     this.state = { currentSecondPage: null };
+//     // }
+
+//     // handleSecondPageChange = number => {
+//     //     console.log(number)
+//     //     this.setState({ currentSecondPage: number });
+//     // };
+
+//     // handleSecondPageClick = (e) => {
+//     //     e.persist();
+//     //     let number;
+//     //     number = e.target.value;
+//     //     this.setState({ currentSecondPage: number });
+//     // }
+
+//     // // handleBeforeSecondPageChange = number => {
+//     // //     console.log(number);
+//     // // };
+
+//     // getSecondPageNumbers = () => {
+//     //     const secondPageNumbers = [];
+
+//     //     for (let i = 8; i <= 3; i++) {
+//     //         secondPageNumbers.push({
+//     //             key: i,
+//     //             eventkey: i - 1,
+//     //         });
+//     //     }
+
+//     //     console.log([...secondPageNumbers]);
+//     //     return [...secondPageNumbers]
+//     // };
+
+//     render() {
+//         // const secondPagesNumbers = this.getSecondPageNumbers();
+
+//         return (
+//             <div className="page-contain">
+//                 <ReactPageScroller
+                    
+//                     containerWidth={'80vw'}
+//                     containerHeight={'80vh'}
+//                     >
+//                     <PageTwoOne />
+//                     <section>middle</section>
+//                     <section>middle</section>
+//                     <PageTwoTwo />
+//                 </ReactPageScroller>
+//             </div>
+//         );
+//     }
+// }

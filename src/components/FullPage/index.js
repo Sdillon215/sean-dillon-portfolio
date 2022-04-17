@@ -12,10 +12,11 @@ import SectionTwo from '../SectionTwo';
 export default class FullPage extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { currentPage: null };
+        this.state = { currentPage: 0 };
     }
 
     handlePageChange = number => {
+        console.log(number)
         this.setState({ currentPage: number });
     };
 
@@ -23,7 +24,7 @@ export default class FullPage extends React.Component {
         e.persist();
         let number;
         number = e.target.value;
-        this.setState({ currentPage: number });
+        this.handlePageChange(parseInt(number));
     }
 
     handleBeforePageChange = number => {
@@ -49,16 +50,6 @@ export default class FullPage extends React.Component {
 
         return (
             <React.Fragment>
-                <ReactPageScroller
-                    pageOnChange={this.handlePageChange}
-                    onBeforePageScroll={this.handleBeforePageChange}
-                    customPageNumber={this.state.currentPage}
-                >
-                    <SectionOne />
-                    <SectionTwo />
-                    <section id="third-section">Full-Page</section>
-                    <section id="fourth-section">Slideshow</section>
-                </ReactPageScroller>
                 <Box sx={{ flexGrow: 1 }}>
                     <AppBar position="fixed">
                         <Toolbar>
@@ -72,6 +63,16 @@ export default class FullPage extends React.Component {
                         </Toolbar>
                     </AppBar>
                 </Box>
+                <ReactPageScroller
+                    pageOnChange={this.handlePageChange}
+                    onBeforePageScroll={this.handleBeforePageChange}
+                    customPageNumber={this.state.currentPage}
+                >
+                    <SectionOne />
+                    <SectionTwo />
+                    <section id="third-section">Full-Page</section>
+                    <section id="fourth-section">Slideshow</section>
+                </ReactPageScroller>
             </React.Fragment>
         );
     }
