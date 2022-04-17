@@ -117,7 +117,6 @@ h3 {
 /* End Section one style */
 
 /* Section Two Style */
-
 .first {
   position: absolute;
 }
@@ -127,7 +126,6 @@ h3 {
   height: 100vh;
   box-sizing: border-box;
   position: relative;
-  padding: 8vh;
   overflow:hidden;
   background-position: center;
   background-size: cover;
@@ -140,10 +138,9 @@ h3 {
 }
 
 .second-scroll-cont {
-  width: 80%;
-  height: auto;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  overflow: hidden;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
@@ -152,7 +149,8 @@ h3 {
 }
 
 .two-scroll-sect {
-  height: 60%;
+  margin-top: 8vh;
+  height: 60vh;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -162,10 +160,10 @@ h3 {
 }
 
 .two-scroll-sect-bottom {
-  height: 32%;
+  height: 32vh;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(81, 108, 157, 0.3);
+  background-color: rgba(17, 25, 40, 0.75);
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 

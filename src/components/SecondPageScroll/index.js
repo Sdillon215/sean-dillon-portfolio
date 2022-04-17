@@ -37,7 +37,7 @@ function SecondPageScroll() {
                             <div className="about-card">
                             </div>
                         </div>
-                        <div className="two-scroll-sect two-scroll-sect-bottom">
+                        <div className="two-scroll-sect-bottom">
                             bottom
                         </div>
                     </div>
@@ -50,11 +50,12 @@ function SecondPageScroll() {
                             <div className="about-card">
                             </div>
                         </div>
-                        <div className="two-scroll-sect two-scroll-sect-bottom">
+                        <div className="two-scroll-sect-bottom">
                             bottom
                         </div>
                     </div>
-                </section><section className="second-scroll-cont">
+                </section>
+                <section className="second-scroll-cont">
                     <div>
                         <div className="two-scroll-sect">
                             <div className="about-card">
@@ -62,11 +63,12 @@ function SecondPageScroll() {
                             <div className="about-card">
                             </div>
                         </div>
-                        <div className="two-scroll-sect two-scroll-sect-bottom">
+                        <div className="two-scroll-sect-bottom">
                             bottom
                         </div>
                     </div>
-                </section><section className="second-scroll-cont">
+                </section>
+                <section className="second-scroll-cont">
                     <div>
                         <div className="two-scroll-sect">
                             <div className="about-card">
@@ -74,7 +76,7 @@ function SecondPageScroll() {
                             <div className="about-card">
                             </div>
                         </div>
-                        <div className="two-scroll-sect two-scroll-sect-bottom">
+                        <div className="two-scroll-sect-bottom">
                             bottom
                         </div>
                     </div>

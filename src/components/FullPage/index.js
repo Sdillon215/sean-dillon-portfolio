@@ -69,8 +69,8 @@ export default class FullPage extends React.Component {
                     customPageNumber={this.state.currentPage}
                 >
                     <SectionOne />
-                    <SectionTwo />
                     <section id="third-section">Full-Page</section>
+                    <SectionTwo />
                     <section id="fourth-section">Slideshow</section>
                 </ReactPageScroller>
             </React.Fragment>
