@@ -121,7 +121,7 @@ h3 {
   position: absolute;
 }
 
-#section-two {
+#section-three {
   background-image: url('assets/images/yosemite.jpg');
   height: 100vh;
   box-sizing: border-box;
@@ -137,7 +137,7 @@ h3 {
   align-items: center;
 }
 
-.second-scroll-cont {
+.three-scroll-cont {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -148,7 +148,7 @@ h3 {
   align-items: stretch;
 }
 
-.two-scroll-sect {
+.three-scroll-sect {
   margin-top: 8vh;
   height: 60vh;
   display: flex;
@@ -159,7 +159,7 @@ h3 {
   align-items: center;
 }
 
-.two-scroll-sect-bottom {
+.three-scroll-sect-bottom {
   height: 32vh;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -167,7 +167,7 @@ h3 {
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
-.about-card {
+.proj-card {
   height: 30vw;
   width: 30vw;
   min-width: 300px;

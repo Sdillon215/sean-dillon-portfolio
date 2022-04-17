@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import ReactPageScroller from 'react-page-scroller';
 import SectionOne from '../SectionOne';
 import SectionTwo from '../SectionTwo';
+import SectionThree from "../SectionThree";
 
 
 export default class FullPage extends React.Component {
@@ -69,8 +70,8 @@ export default class FullPage extends React.Component {
                     customPageNumber={this.state.currentPage}
                 >
                     <SectionOne />
-                    <section id="third-section">Full-Page</section>
                     <SectionTwo />
+                    <SectionThree />
                     <section id="fourth-section">Slideshow</section>
                 </ReactPageScroller>
             </React.Fragment>
