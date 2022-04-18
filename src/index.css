@@ -19,6 +19,13 @@ h3 {
   padding: 0;
 }
 
+h3 {
+  font-size: 1.5em;
+}
+p, li {
+  font-size: 1.1em;
+}
+
 /* Nav style */
 .MuiBox-root .MuiPaper-root {
   backdrop-filter: blur(2px) saturate(180%);
@@ -27,6 +34,7 @@ h3 {
 }
 
 .MuiPaper-root .MuiToolbar-root {
+  height: 8vh;
   min-height: 8vh;
 }
 
@@ -156,10 +164,6 @@ h3 {
   font-size: 2.5vw;
 }
 
-.two-bottom-cont p {
-  font-size: 1.7vw;
-}
-
 .typed-out {
   overflow: hidden;
   white-space: nowrap;
@@ -260,8 +264,8 @@ h3 {
 }
 
 .three-scroll-cont {
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -271,8 +275,8 @@ h3 {
 }
 
 .three-scroll-sect {
-  margin-top: 8vh;
-  height: 60vh;
+  height: 56vh;
+  margin-top: 6vh;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -281,8 +285,17 @@ h3 {
   align-items: center;
 }
 
+.three-scroll-sect-bottom {
+  height: 36vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
 .proj-card {
-  height: 45vw;
+  height: 56vh;
   width: 60vw;
   min-width: 300px;
   display: flex;
@@ -292,10 +305,10 @@ h3 {
 }
 
 .proj-card img {
-  height: 45vw;
-  width: 60vw;
-  border-radius: 10px;
-  margin-bottom: 2vw;
+  height: 45vh;
+  width: 50vw;
+  border-radius: 6px;
+  margin-bottom: 2vh;
 }
 
 .proj-card h2 {
@@ -305,30 +318,21 @@ h3 {
   border-bottom: 2px solid rgb(149, 134, 134);
 }
 
-
-.three-scroll-sect-bottom {
-  height: 32vh;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-content: center;
-  align-items: center;
-}
-
 .info-card {
   height: 30vh;
-  width: 30vh;
+  width: 30vw;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  text-align: center;
 }
 
 .info-card h3 {
   text-align: center;
   width: 10vw;
   padding-bottom: .5vw;
+  margin-bottom: .8vw;
   border-bottom: 2px solid rgb(149, 134, 134);
 }
 /* Section Three Style End */
