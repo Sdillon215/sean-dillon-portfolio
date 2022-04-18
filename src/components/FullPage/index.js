@@ -38,7 +38,7 @@ export default class FullPage extends React.Component {
                     <AppBar position="fixed">
                         <Toolbar>
                             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                                Sean Dillon
+                                SD
                             </Typography>
                             <Button value="0" onClick={this.handleClick}>Home</Button>
                             <Button value="1" onClick={this.handleClick}>About</Button>

@@ -4,8 +4,8 @@ html * {
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   height: 100%;
   width: 100%;
   color: rgb(149, 134, 134);
@@ -36,6 +36,7 @@ p, li {
 .MuiPaper-root .MuiToolbar-root {
   height: 8vh;
   min-height: 8vh;
+  max-height: 8vh;
 }
 
 .MuiToolbar-root .MuiTypography-root {
@@ -276,7 +277,7 @@ p, li {
 
 .three-scroll-sect {
   height: 56vh;
-  margin-top: 6vh;
+  margin-top: 8vh;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -355,11 +356,11 @@ p, li {
 
 /* Media Queries */
 @media only screen and (max-width: 1025px) {
-  .proj-card {
+  /* .proj-card {
     height: 34vw;
     width: 34vw;
     min-width: 250px;
-  }
+  } */
 
   .MuiToolbar-root .MuiButton-root {
     font-size: 2vw;
@@ -367,11 +368,11 @@ p, li {
 }
 
 @media only screen and (max-width: 769px) {
-  .proj-card {
+  /* .proj-card {
     height: 40vw;
     width: 40vw;
     min-width: 200px;
-  }
+  } */
 
   .MuiToolbar-root .MuiTypography-root {
     font-size: 3.7vw;
@@ -385,11 +386,11 @@ p, li {
 }
 
 @media only screen and (max-width: 480px) {
-  .proj-card {
+  /* .proj-card {
     height: 45vw;
     width: 45vw;
     min-width: 150px;
-  }
+  } */
 
   .MuiToolbar-root .MuiTypography-root {
     font-size: 5vw;
