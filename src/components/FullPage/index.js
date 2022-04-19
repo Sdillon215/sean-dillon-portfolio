@@ -8,7 +8,6 @@ import ReactPageScroller from 'react-page-scroller';
 import SectionOne from '../SectionOne';
 import SectionTwo from '../SectionTwo';
 import SectionThree from "../SectionThree";
-import { shadows } from '@mui/system';
 
 export default class FullPage extends React.Component {
     constructor(props) {

@@ -199,6 +199,8 @@ p {
 .about-card img {
   width: 100%;
   height: 100%;
+  max-width: 390px;
+  max-height: 390px;
 }
 
 .two-top-cont {

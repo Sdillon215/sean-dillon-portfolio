@@ -6,7 +6,7 @@ function SectionOne() {
     <section id="first-section" className="first">
       <div id="home-title">
         <h1>SEAN DILLON</h1>
-        <h2>Full Stack Developer | Rock Climber | Desert Rat</h2>
+        <h2>Full Stack Dev | Climber | Desert Rat</h2>
       </div>
       <KeyboardDoubleArrowDownIcon sx={{ fontSize: '8vw' }} className='arrow bounce' />
     </section>
