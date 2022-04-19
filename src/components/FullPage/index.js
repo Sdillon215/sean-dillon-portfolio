@@ -8,7 +8,7 @@ import ReactPageScroller from 'react-page-scroller';
 import SectionOne from '../SectionOne';
 import SectionTwo from '../SectionTwo';
 import SectionThree from "../SectionThree";
-
+import { shadows } from '@mui/system';
 
 export default class FullPage extends React.Component {
     constructor(props) {
@@ -21,7 +21,7 @@ export default class FullPage extends React.Component {
         console.log(number)
         this.setState({ currentPage: number });
     };
-
+    
     // gets page number from nav btn click
     handleClick = (e) => {
         e.persist();
@@ -40,10 +40,10 @@ export default class FullPage extends React.Component {
                             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                                 SD
                             </Typography>
-                            <Button value="0" onClick={this.handleClick}>Home</Button>
-                            <Button value="1" onClick={this.handleClick}>About</Button>
-                            <Button value="2" onClick={this.handleClick}>Work</Button>
-                            <Button value="3" onClick={this.handleClick}>Contact</Button>
+                            <Button sx={{ boxShadow: 0 }} className="hvr-underline-from-left" value="0" onClick={this.handleClick}>Home</Button>
+                            <Button className="hvr-underline-from-left" value="1" onClick={this.handleClick}>About</Button>
+                            <Button className="hvr-underline-from-left" value="2" onClick={this.handleClick}>Work</Button>
+                            <Button className="hvr-underline-from-left" value="3" onClick={this.handleClick}>Contact</Button>
                         </Toolbar>
                     </AppBar>
                 </Box>

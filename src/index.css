@@ -24,7 +24,7 @@ h3 {
   font-size: 1.5em;
 }
 p, li {
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 /* Nav style */
@@ -49,6 +49,35 @@ p, li {
   font-size: 1.5vw;
   font-weight: bold;
   color: rgb(149, 134, 134);
+  border-radius: 0px;
+}
+
+/* Underline From Left */
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  border-bottom: 3px solid rgb(149, 134, 134);
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus {
+  right: 0;
 }
 
 .page-contain {
@@ -269,42 +298,11 @@ p, li {
   justify-content: space-evenly;
   align-content: stretch;
   align-items: center;
+  padding-top: 8vh;
 }
 
-.proj-card-featured {
-  height: 45vh;
-  width: 55vw;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center;
-  margin-top: 8vh;
-}
-
-.img-cont-1 {
-  height: 45vh;
-  width: 55vw;
-
-}
-.img-cont-1 img {
+.proj-cards {
   height: 42vh;
-  width: 100%;
-}
-
-.proj-info {
-  width: 50vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-#proj-cards {
-  height: 34vh;
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -314,34 +312,74 @@ p, li {
 }
 
 .proj-card {
-  height: 34vh;
-  width: 50vw;
+  height: 41vh;
+  width: 40vw;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
 }
 
-.img-cont-2 {
-  height: 34vh;
-  width: 35vw;
-
-}
-.img-cont-2 img {
-  height: 31vh;
+.proj-card img {
+  border-radius: 8px;
+  height: 38vh;
   width: 100%;
 }
 
-.proj-info-2 {
-  width: 50vw;
+.proj-info {
+  width: 49vw;
+  height: 3vw;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+/* Float Shadow */
+.hvr-float-shadow {
+  /* display: inline-block; */
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
 /* Section Three Style End */
 
@@ -394,8 +432,8 @@ p, li {
 
 @media only screen and (max-width: 480px) {
   /* .proj-card {
-    height: 45vw;
-    width: 45vw;
+    height: 40vw;
+    width: 40vw;
     min-width: 150px;
   } */
 
