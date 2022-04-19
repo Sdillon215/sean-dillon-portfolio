@@ -316,6 +316,7 @@ p, li {
   text-align: center;
   width: 60vw;
   padding-bottom: .5vw;
+  /* margin-bottom: .5vw; */
   border-bottom: 2px solid rgb(149, 134, 134);
 }
 
