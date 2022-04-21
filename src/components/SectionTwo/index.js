@@ -30,7 +30,7 @@ function SectionTwo(props) {
                 {typeWriter ? (
                     <>
                         <div className="type-cont">
-                            <h3 className='typed-out'>Hi. I'm Sean.</h3>
+                            <h2 className='typed-out'>Hi. I'm Sean.</h2>
                         </div>
                         <div>
                             <p className="fade-in-text">
