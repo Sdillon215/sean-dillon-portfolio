@@ -8,6 +8,7 @@ import ReactPageScroller from 'react-page-scroller';
 import SectionOne from '../SectionOne';
 import SectionTwo from '../SectionTwo';
 import SectionThree from "../SectionThree";
+import SectionFour from "../SectionFour";
 
 export default class FullPage extends React.Component {
     constructor(props) {
@@ -52,7 +53,7 @@ export default class FullPage extends React.Component {
                     <SectionOne />
                     <SectionTwo props={this.state.currentPage} />
                     <SectionThree />
-                    <section id="fourth-section">Slideshow</section>
+                    <SectionFour />
                 </ReactPageScroller>
             </React.Fragment>
         );
