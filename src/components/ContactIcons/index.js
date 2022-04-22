@@ -5,7 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import Link from '@mui/material/Link';
 
-function ContactBox() {
+function ContactIcons() {
     return (
         <div className="cube-cont">
             <div className="cube">
@@ -30,4 +30,4 @@ function ContactBox() {
     )
 }
 
-export default ContactBox;
+export default ContactIcons;
