@@ -35,19 +35,21 @@ export default function ContactForm() {
         e.target.reset();
     }
     return (
-        <Box
-            component="form"
-            sx={{
-                '& > :not(style)': { m: 1, width: '25ch' },
-                backgroundColor: "rgba(248, 249, 252, 0.37)",
-            }}
-            autoComplete="off"
-            onSubmit={handleSubmit}
-        >
-            <OutlinedInput required name="from_name" type="name" placeholder="Name" />
-            <OutlinedInput required name="from_email" type="email" placeholder="Email" />
-            <OutlinedInput required name="message" type="text" placeholder="Message" />
-            <Button type="submit" sx={{ backgroundColor: "green" }}>Submit</Button>
-        </Box>
+        <div className="contact-cont">
+            <Box
+                className='email-form'
+                component="form"
+                sx={{
+                    '& > :not(style)': { display: 'flex', m: 1, width: '70vw', maxWidth: 900, alignContent: 'center', justifyContent: 'center' },
+                }}
+                autoComplete="off"
+                onSubmit={handleSubmit}
+            >
+                <OutlinedInput required fullWidth name="from_name" type="name" placeholder="Name" />
+                <OutlinedInput required fullWidth name="from_email" type="email" placeholder="Email" />
+                <OutlinedInput sx={{height: '15vh'}}required fullWidth name="message" type="text" placeholder="Message" />
+                <Button type="submit" size="medium" sx={{ backgroundColor: "green" }}>Submit</Button>
+            </Box>
+        </div>
     );
 }

@@ -1,12 +1,12 @@
 import React from 'react';
 import ContactIcons from "../ContactIcons";
-import ContactForm from "../ContactForm";
+import ContactForm from '../ContactForm';
 
 function SectionFour() {
   return (
     <section id="fourth-section">
-      <ContactForm />
       <ContactIcons />
+      <ContactForm />
     </section>
   );
 }

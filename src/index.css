@@ -389,17 +389,18 @@ p {
 .cube-cont {
   perspective: 800px;
   perspective-origin: 50% 30%;
-  width: 100%;
-  margin: 0 auto;
-  height: 30vh;
+  width: 100vw;
+  margin: 10vh auto;
+  height: auto;
   padding-top: 5px;
 }
 
 .cube {
-  position: relative;
+  position: sticky;
   width: 200px;
+  height: 200px;
   transform-style: preserve-3d;
-  margin: 10% auto;
+  margin: 0 auto;
   animation: spin 15s infinite linear;
   animation-play-state: running;
 }
@@ -410,7 +411,6 @@ p {
   height: 200px;
   text-align: center;
   line-height: 160%;
-  /* background-color: rgba(248, 249, 252, 0.3); */
 }
 
 .cube div:hover {
@@ -444,7 +444,7 @@ p {
 .top {
   transform: rotateX(-90deg) translateY(-100px);
   transform-origin: top center;
-  
+
 }
 
 .bottom {
@@ -459,13 +459,26 @@ p {
 }
 
 @keyframes spin {
-  from { 
-   transform: rotateY(0deg);
- }
+  from {
+    transform: rotateY(0deg);
+  }
+
   to {
     transform: rotateY(-360deg);
   }
 }
+
+.contact-cont {
+  padding-bottom: 6vh;
+}
+.email-form {
+  backdrop-filter: blur(3px) saturate(156%);
+  -webkit-backdrop-filter: blur(3px) saturate(156%);
+  background-color: rgba(248, 249, 252, 0.21);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
 /* End Section Four */
 
 /* Media Queries */
