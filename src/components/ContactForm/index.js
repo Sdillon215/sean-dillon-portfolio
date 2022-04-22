@@ -27,7 +27,7 @@ export default function ContactForm() {
             }, (err) => {
                 Swal.fire({
                     icon: 'error',
-                    title: 'Oops...',
+                    title: 'Oof...',
                     text: 'Something went wrong! You can also click the email icon above to send me an email!',
                 })
                 console.log('FAILED...', err);
