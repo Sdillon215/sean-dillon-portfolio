@@ -1,5 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2'
 import Box from '@mui/material/Box';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import Button from "@mui/material/Button";
@@ -15,15 +16,23 @@ export default function ContactForm() {
         const from_email = e.target.from_email.value;
         const message = e.target.message.value;
         let templateParams = { from_name, from_email, message };
-        console.log(templateParams);
 
         emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, templateParams, process.env.REACT_APP_PUBLIC_KEY)
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Your message was sent! Thanks for reaching out!',
+                })
             }, (err) => {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong! You can also click the email icon above to send me an email!',
+                })
                 console.log('FAILED...', err);
             });
-            e.target.reset();
+        e.target.reset();
     }
     return (
         <Box
