@@ -4,9 +4,7 @@ import Box from '@mui/material/Box';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import Button from "@mui/material/Button";
 
-const SERVICE_ID = 'port_email_1212';
-const TEMPLATE_ID = 'contact_form';
-const publicKey = '8rw0Fdn-WAijA21Yz'
+
 
 export default function ContactForm() {
 
@@ -19,12 +17,13 @@ export default function ContactForm() {
         let templateParams = { from_name, from_email, message };
         console.log(templateParams);
 
-        emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, publicKey)
+        emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, templateParams, process.env.REACT_APP_PUBLIC_KEY)
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
             }, (err) => {
                 console.log('FAILED...', err);
             });
+            e.target.reset();
     }
     return (
         <Box
