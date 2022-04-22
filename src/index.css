@@ -170,7 +170,7 @@ p {
   flex-direction: column;
   box-sizing: border-box;
   flex-wrap: nowrap;
-  justify-content: start;
+  justify-content: flex-start;
   align-content: center;
   align-items: stretch;
   padding: 12vh 8vh 4vh 8vh;
@@ -359,7 +359,10 @@ p {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
 }
@@ -383,8 +386,90 @@ p {
   align-items: center;
 }
 
+.cube-cont {
+  perspective: 800px;
+  perspective-origin: 50% 30%;
+  width: 100%;
+  margin: 0 auto;
+  height: 30vh;
+  padding-top: 5px;
+}
+
+.cube {
+  position: relative;
+  width: 200px;
+  transform-style: preserve-3d;
+  margin: 10% auto;
+  animation: spin 15s infinite linear;
+  animation-play-state: running;
+}
+
+.cube div {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 160%;
+  /* background-color: rgba(248, 249, 252, 0.3); */
+}
+
+.cube div:hover {
+  cursor: pointer;
+}
+
+.cube:hover {
+  animation-play-state: paused;
+}
+
+.back {
+  transform: translateZ(-100px) rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.right {
+  transform: rotateY(-270deg) translateX(100px);
+  transform-origin: top right;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.left {
+  transform: rotateY(270deg) translateX(-100px);
+  transform-origin: center left;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.top {
+  transform: rotateX(-90deg) translateY(-100px);
+  transform-origin: top center;
+  
+}
+
+.bottom {
+  transform: rotateX(90deg) translateY(100px);
+  transform-origin: bottom center;
+}
+
+.front {
+  transform: translateZ(100px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@keyframes spin {
+  from { 
+   transform: rotateY(0deg);
+ }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+/* End Section Four */
+
 /* Media Queries */
-@media only screen and (min-width: 1400px){
+@media only screen and (min-width: 1400px) {
   h1 {
     font-size: 75px;
   }
@@ -397,6 +482,7 @@ p {
     font-size: 27px;
   }
 }
+
 @media only screen and (max-width: 1500px) {
   @media only screen and (min-height: 800px) {
     .proj-card img {
@@ -407,12 +493,14 @@ p {
 }
 
 @media only screen and (max-width: 1025px) {
+
   /* Global */
   .MuiToolbar-root .MuiButton-root {
     font-size: 2vw;
   }
 
-  p, a {
+  p,
+  a {
     font-size: .9em;
   }
 
@@ -456,6 +544,7 @@ p {
     min-height: 6vh;
     max-height: 6vh;
   }
+
   .MuiToolbar-root .MuiButton-root {
     font-size: 2vw;
   }
@@ -463,12 +552,16 @@ p {
   h1 {
     font-size: 3em;
   }
+
   h2 {
     font-size: 1.7em;
   }
-  p, a {
+
+  p,
+  a {
     font-size: 1.5em;
   }
+
   .hvr-underline-from-left:hover:before {
     right: 100%;
   }
@@ -496,13 +589,14 @@ p {
 
   .two-top-cont {
     height: 30vw;
-    
+
   }
-  
-   .about-card {
+
+  .about-card {
     height: 30vw;
     width: 30vw;
   }
+
   /* End Section Two */
 
   /* Section Three */
@@ -545,12 +639,14 @@ p {
   h2 {
     font-size: 2.1em;
   }
-  p, a {
+
+  p,
+  a {
     font-size: 1.8em;
   }
 
   /* Section Three */
- 
+
 
   .MuiToolbar-root .MuiTypography-root {
     font-size: 5vw;
@@ -563,8 +659,10 @@ p {
 }
 
 @media only screen and (max-width: 500px) {
+
   /* Global */
-  p, a {
+  p,
+  a {
     font-size: 2.2em;
   }
 }
