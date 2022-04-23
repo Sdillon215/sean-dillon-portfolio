@@ -50,7 +50,7 @@ export default function ContactForm() {
                 <OutlinedInput required name="from_email" type="email" placeholder="Email" />
                 <OutlinedInput required name="message" type="text" multiline sx={{ minHeight: '15vh', height: 'auto' }} placeholder="Message" />
                 <div>
-                    <Button variant="contained" type="submit" sx={{ fontWeight: 'bold'}} endIcon={<SendIcon />}>
+                    <Button variant="contained" type="submit" sx={{ fontWeight: 'bold' }} endIcon={<SendIcon />}>
                         Send
                     </Button>
                 </div>
