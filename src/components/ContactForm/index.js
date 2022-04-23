@@ -37,7 +37,6 @@ export default function ContactForm() {
     return (
         <div className="contact-cont">
             <Box
-                className='blur-cont'
                 component="form"
                 sx={{
                     '& > :not(style)': { display: 'flex', m: 1, width: '75vw', maxWidth: 850, alignContent: 'center', justifyContent: 'center' },
