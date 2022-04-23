@@ -132,12 +132,11 @@ p {
 
 
 .arrow {
-  margin-top: auto;
-  margin-bottom: 0;
   padding: 0;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   transform-origin: bottom;
+  color: rgb(149, 134, 134);
 }
 
 .bounce {
@@ -157,10 +156,6 @@ p {
   100% {
     transform: translateY(0);
   }
-}
-
-.first {
-  position: absolute;
 }
 
 /* End Section one style */
@@ -209,7 +204,8 @@ p {
   white-space: nowrap;
   width: 0;
   animation:
-    typing 1s steps(20, end) forwards;
+    typing 2s steps(20, end) forwards;
+  animation-delay: .6s;
 }
 
 .type-cont {
@@ -474,6 +470,7 @@ p {
 .contact-cont {
   padding-bottom: 6vh;
 }
+
 .email-form {
   backdrop-filter: blur(1.5px) saturate(156%);
   -webkit-backdrop-filter: blur(3px) saturate(156%);
@@ -486,6 +483,7 @@ p {
   font-weight: bold;
   align-items: flex-start;
 }
+
 /* End Section Four */
 
 /* Media Queries */
@@ -665,8 +663,10 @@ p {
     font-size: 1.8em;
   }
 
-  /* Section Three */
-
+  /* Section Two */
+  #about-text {
+    text-align: left;
+  }
 
   .nav-sd {
     font-size: 5vw;

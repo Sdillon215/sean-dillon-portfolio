@@ -30,6 +30,14 @@ export default class FullPage extends React.Component {
         this.handlePageChange(parseInt(number));
     }
 
+    // handles animated arrow click to change currentPage state
+    handleDownClick = (e) => {
+        e.persist();
+        let number = this.state.currentPage + 1;
+        // call handlePageChange and parse int 
+        this.handlePageChange(parseInt(number));
+    }
+
     render() {
         return (
             <React.Fragment>
@@ -49,7 +57,7 @@ export default class FullPage extends React.Component {
                 <ReactPageScroller
                     pageOnChange={this.handlePageChange}
                     customPageNumber={this.state.currentPage}>
-                    <SectionOne />
+                    <SectionOne handleDownClick={this.handleDownClick} />
                     <SectionTwo props={this.state.currentPage} />
                     <SectionThree />
                     <SectionFour />
