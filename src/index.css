@@ -15,7 +15,8 @@ html * {
 
 p,
 h1,
-h2 {
+h2,
+h3 {
   margin: 0;
   padding: 0;
 }
@@ -28,9 +29,14 @@ h2 {
   font-size: 1.2em;
 }
 
+h3 {
+  font-size: .9em;
+}
 
 p {
-  font-size: 1em;
+  /* font-size: 1em; */
+  font-size: .8em;
+
 }
 
 /* Nav style */
@@ -38,6 +44,7 @@ p {
   backdrop-filter: blur(2px) saturate(180%);
   -webkit-backdrop-filter: blur(1px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.85);
+  box-shadow: none;
 }
 
 .MuiPaper-root .MuiToolbar-root {
@@ -162,7 +169,7 @@ p {
 
 /* Section Two Style */
 #section-two {
-  background-color: #2F4858;
+  background-color: #385567;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -288,7 +295,7 @@ p {
 
 /* Section Three Style */
 #section-three {
-  background-color: #2F4858;
+  background-color: #385567;
   height: 100vh;
   box-sizing: border-box;
   position: relative;
@@ -296,54 +303,83 @@ p {
   background-position: center;
   background-size: cover;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-content: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
   align-items: center;
   padding: 8vh 8vh 0vh 8vh;
 }
 
-.proj-cards {
-  height: 42vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-items: center;
+.image-frame {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-.proj-card {
-  height: 40vh;
-  width: 65vh;
+.image-frame img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.image-frame:hover img {
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  /* -webkit-filter: blur(2px);
+  filter: blur(2px); */
+}
+
+div.text-content {
+  backdrop-filter: blur(2px) saturate(180%);
+  -webkit-backdrop-filter: blur(2px) saturate(180%);
+  background-color: rgba(247, 248, 251, 0.9);
+  /* background-color:rgba(47, 72, 88, 0.8); */
+  color: black;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
+  opacity: 0;
+  position: absolute;
 }
 
-.proj-card img {
-  border-radius: 8px;
-  height: 38vh;
-  width: 100%;
+.image-frame:hover div.text-content {
+  opacity: 1;
+  z-index: 100;
 }
 
-.proj-info {
-  width: 45vw;
-  height: 3vw;
+.proj-btn-cont {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: space-evenly;
+  width: 20vw;
+  margin-top: 20px;
 }
 
-.proj-info p {
-  white-space: nowrap;
+.btn {
+  background-color: rgb(247, 248, 251, 0.9);
+  color: #385567;
+  border: 2px solid #385567;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: .8em;
+  width: 9vw;
+}
+
+.btn:hover {
+  background-color: #385567;
+  color: rgb(247, 248, 251, 0.9);
 }
 
 /* Float Animation */
@@ -392,6 +428,7 @@ p {
   margin: 10vh auto;
   height: auto;
   padding-top: 5px;
+  z-index: 0;
 }
 
 .cube {
@@ -471,19 +508,44 @@ p {
   padding-bottom: 6vh;
 }
 
-.email-form {
-  backdrop-filter: blur(1.5px) saturate(156%);
-  -webkit-backdrop-filter: blur(3px) saturate(156%);
-  background-color: rgba(248, 249, 252, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.125);
-}
+/* .blur-cont {
+  backdrop-filter: blur(8px) saturate(119%);
+    -webkit-backdrop-filter: blur(8px) saturate(119%);
+    background-color: rgba(17, 25, 40, 0.07);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+} */
 
 .MuiBox-root .MuiOutlinedInput-root {
-  background-color: rgba(248, 249, 252, 0.6);
+  backdrop-filter: blur(2px) saturate(180%);
+  -webkit-backdrop-filter: blur(1px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.85);
+  color: rgb(149, 134, 134);
   font-weight: bold;
   align-items: flex-start;
 }
 
+.btn-form {
+  backdrop-filter: blur(2px) saturate(180%);
+  -webkit-backdrop-filter: blur(1px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.89);
+  color: rgb(149, 134, 134);
+  border: 2px solid rgba(17, 25, 40, 0.85);
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: bold;
+  font-size: .8em;
+  width: 110px;
+  height: 40px;
+}
+
+.btn-form:hover {
+  background-color: rgba(17, 25, 40, 0.5);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(.5px);
+}
 /* End Section Four */
 
 /* Media Queries */

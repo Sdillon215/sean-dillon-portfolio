@@ -3,7 +3,6 @@ import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2'
 import Box from '@mui/material/Box';
 import OutlinedInput from '@mui/material/OutlinedInput';
-import Button from "@mui/material/Button";
 import SendIcon from '@mui/icons-material/Send';
 
 
@@ -38,7 +37,7 @@ export default function ContactForm() {
     return (
         <div className="contact-cont">
             <Box
-                className='email-form'
+                className='blur-cont'
                 component="form"
                 sx={{
                     '& > :not(style)': { display: 'flex', m: 1, width: '70vw', maxWidth: 900, alignContent: 'center', justifyContent: 'center' },
@@ -50,9 +49,9 @@ export default function ContactForm() {
                 <OutlinedInput required name="from_email" type="email" placeholder="Email" />
                 <OutlinedInput required name="message" type="text" multiline sx={{ minHeight: '15vh', height: 'auto' }} placeholder="Message" />
                 <div>
-                    <Button variant="contained" type="submit" sx={{ fontWeight: 'bold' }} endIcon={<SendIcon />}>
-                        Send
-                    </Button>
+                    <button className="btn-form" type="submit">
+                        SEND <SendIcon sx={{ paddingLeft: '5%'}} />
+                    </button>
                 </div>
             </Box>
         </div>
