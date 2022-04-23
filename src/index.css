@@ -472,13 +472,17 @@ p {
   padding-bottom: 6vh;
 }
 .email-form {
-  backdrop-filter: blur(3px) saturate(156%);
+  backdrop-filter: blur(1.5px) saturate(156%);
   -webkit-backdrop-filter: blur(3px) saturate(156%);
-  background-color: rgba(248, 249, 252, 0.21);
-  border-radius: 12px;
+  background-color: rgba(248, 249, 252, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
+.MuiBox-root .MuiOutlinedInput-root {
+  background-color: rgba(248, 249, 252, 0.6);
+  font-weight: bold;
+  align-items: flex-start;
+}
 /* End Section Four */
 
 /* Media Queries */

@@ -4,6 +4,7 @@ import Swal from 'sweetalert2'
 import Box from '@mui/material/Box';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import Button from "@mui/material/Button";
+import SendIcon from '@mui/icons-material/Send';
 
 
 
@@ -45,10 +46,14 @@ export default function ContactForm() {
                 autoComplete="off"
                 onSubmit={handleSubmit}
             >
-                <OutlinedInput required fullWidth name="from_name" type="name" placeholder="Name" />
-                <OutlinedInput required fullWidth name="from_email" type="email" placeholder="Email" />
-                <OutlinedInput sx={{height: '15vh'}}required fullWidth name="message" type="text" placeholder="Message" />
-                <Button type="submit" size="medium" sx={{ backgroundColor: "green" }}>Submit</Button>
+                <OutlinedInput required name="from_name" type="name" placeholder="Name" />
+                <OutlinedInput required name="from_email" type="email" placeholder="Email" />
+                <OutlinedInput required name="message" type="text" multiline sx={{ minHeight: '15vh', height: 'auto' }} placeholder="Message" />
+                <div>
+                    <Button variant="contained" type="submit" sx={{ fontWeight: 'bold'}} endIcon={<SendIcon />}>
+                        Send
+                    </Button>
+                </div>
             </Box>
         </div>
     );
