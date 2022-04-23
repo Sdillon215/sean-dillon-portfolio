@@ -46,7 +46,10 @@ p {
   max-height: 8vh;
 }
 
-.MuiToolbar-root .MuiTypography-root {
+.nav-sd {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: rgb(149, 134, 134);
   font-weight: bold;
   font-size: 3vw;
 }
@@ -640,7 +643,7 @@ p {
     margin-top: .4vh
   }
 
-  .MuiToolbar-root .MuiTypography-root {
+  .nav-sd {
     font-size: 3.7vw;
   }
 
@@ -665,7 +668,7 @@ p {
   /* Section Three */
 
 
-  .MuiToolbar-root .MuiTypography-root {
+  .nav-sd {
     font-size: 5vw;
   }
 

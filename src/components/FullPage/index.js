@@ -18,7 +18,6 @@ export default class FullPage extends React.Component {
 
     // recieves number from handleClick or page scroller built in funtion sets currentPage state
     handlePageChange = number => {
-        console.log(number)
         this.setState({ currentPage: number });
     };
     
@@ -38,9 +37,9 @@ export default class FullPage extends React.Component {
                     <AppBar position="fixed">
                         <Toolbar>
                             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                                SD
+                            <button className="nav-sd" value="0" onClick={this.handleClick}>SD</button>
                             </Typography>
-                            <Button sx={{ boxShadow: 0 }} className="hvr-underline-from-left" value="0" onClick={this.handleClick}>Home</Button>
+                            <Button className="hvr-underline-from-left" value="0" onClick={this.handleClick}>Home</Button>
                             <Button className="hvr-underline-from-left" value="1" onClick={this.handleClick}>About</Button>
                             <Button className="hvr-underline-from-left" value="2" onClick={this.handleClick}>Work</Button>
                             <Button className="hvr-underline-from-left" value="3" onClick={this.handleClick}>Contact</Button>
