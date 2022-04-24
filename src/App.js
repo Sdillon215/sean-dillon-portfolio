@@ -19,8 +19,8 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: [
-      'Roboto Mono',
-       'monospace'
+      'Raleway',
+       'sans-serif'
     ].join(','),
   },
 });

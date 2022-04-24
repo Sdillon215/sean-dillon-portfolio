@@ -49,7 +49,7 @@ export default function ContactForm() {
                 <OutlinedInput required name="message" type="text" multiline sx={{ minHeight: '15vh', height: 'auto' }} placeholder="Message" />
                 <div>
                     <button className="btn-form" type="submit">
-                        SEND <SendIcon sx={{ paddingLeft: '5%'}} />
+                        Send <SendIcon sx={{ paddingLeft: '5%'}} />
                     </button>
                 </div>
             </Box>

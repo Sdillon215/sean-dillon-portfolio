@@ -12,7 +12,6 @@ function SectionTwo(props) {
         typeWriter = true;
     }
 
-
     return (
         <section id="section-two">
             <div className="two-top-cont">
@@ -30,11 +29,11 @@ function SectionTwo(props) {
                 {typeWriter ? (
                     <>
                         <div className="type-cont">
-                            <h2 className='typed-out'>Hi. I'm Sean.</h2>
+                            <h2 className='typed-out'>Hi. I'm Sean. I like to climb rocks & write code!</h2>
                         </div>
                         <div>
                             <p id="about-text" className="fade-in-text">
-                                I have been developing web applications for two years and recently graduated from The University of Utah's Full Stack Development boot camp. For years I have dreamt of traveling full-time and climbing all over the world but this goal was unattainable in my previous career field. Two years ago I came to the conclusion that I would no longer decide what was possible based on circumstance but rather change the circumstance until the goal becomes attainable. I have applied this ideal to my education and the projects that I work on. <span id="italic">The only limitation of the applications we can build is our perception of what is possible!</span> Pursuing a career in web development began as a means to pursue my passions but ultimately it became one of them. I am actively looking for new projects and work. Please feel free to reach out with any comments, inquiries, or opportunities!
+                                I have been developing web applications for two years and recently graduated from The University of Utah's Full Stack Development boot camp. For years I have dreamt of traveling full-time and climbing all over the world but this goal was unattainable in my previous career field. Two years ago I came to the conclusion that I would no longer determine what is possible based on circumstance but rather adjust the circumstance until the goal becomes attainable. I have applied this ideal to my education and the projects that I work on. <span id="italic">The only limitation of the applications we can build is our perception of what is possible!</span> Starting a career in web development began as a means to pursue my passions but ultimately it became one of them. I am actively looking for new projects and work. Please feel free to reach out with any comments, inquiries, or opportunities!
                             </p>
                         </div>
                     </>

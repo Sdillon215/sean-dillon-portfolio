@@ -7,7 +7,7 @@ body {
 }
 
 html * {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Raleway', sans-serif;
   font-size: 2vw;
 }
 
@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
 h3 {
@@ -32,7 +32,7 @@ h3 {
 }
 
 p {
-  font-size: .8em;
+  font-size: .9em;
 }
 
 #italic {
@@ -64,6 +64,7 @@ p {
   font-size: 3vw;
   padding: 0;
   margin: 0;
+  cursor: pointer;
 }
 
 .MuiToolbar-root .MuiButton-root {
@@ -199,7 +200,7 @@ p {
   white-space: nowrap;
   width: 0;
   animation:
-    typing 1.5s steps(13, end) forwards;
+    typing 3s steps(38, end) forwards;
   animation-delay: .6s;
 }
 
@@ -368,6 +369,7 @@ div.text-content {
   align-items: center;
   font-size: .8em;
   width: 9vw;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -523,6 +525,7 @@ div.text-content {
   font-weight: bold;
   font-size: .8em;
   width: 9vw;
+  cursor: pointer;
 }
 
 .btn-form:hover {
@@ -533,31 +536,12 @@ div.text-content {
 /* End Section Four */
 
 /* Media Queries */
-@media only screen and (min-width: 1400px) {
-  h1 {
-    font-size: 75px;
-  }
-
-  h2 {
-    font-size: 36px;
-  }
-
-  p {
-    font-size: 27px;
-  }
-}
-
-
 @media only screen and (max-width: 1025px) {
 
   /* Global */
   .MuiToolbar-root .MuiButton-root {
     font-size: 2vw;
   }
-
- h2 {
-   font-size: .9em;
- }
   /* End Global */
   /* section two */
   #section-two {
@@ -712,10 +696,10 @@ div.text-content {
   }
 
   h2 {
-    font-size: 2.1em;
+    font-size: 2.2em;
   }
   p {
-    font-size: 1.9em;
+    font-size: 2.2em;
   }
 
    #about-text {
