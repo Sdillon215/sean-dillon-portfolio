@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Sdillon215/sean-dillon-portfolio/precache-manifest.757fe30572dd13e3f38ecb5e85ca0039.js"
+  "/sean-dillon-portfolio/precache-manifest.66d8c86fe65f18e2fc30b5dce491ae28.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/Sdillon215/sean-dillon-portfolio/index.html", {
+workbox.routing.registerNavigationRoute("/sean-dillon-portfolio/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
