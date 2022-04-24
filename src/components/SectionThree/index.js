@@ -36,7 +36,7 @@ function SectionThree() {
             url: 'https://ez-budget-1.herokuapp.com/',
             img: EzBud,
             description: 'Easy Budget is a convenient PWA that can be used to track your transactions with or without internet connection.',
-            tech: 'Javascript | IndexedDB | Bootstrap'
+            tech: 'Express.js | IndexedDB | MongoDB'
         },
         {
             name: 'Google API Search',

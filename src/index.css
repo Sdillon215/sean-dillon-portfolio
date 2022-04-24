@@ -20,11 +20,11 @@ h3 {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 h3 {
@@ -32,7 +32,12 @@ h3 {
 }
 
 p {
-  font-size: .93em;
+  font-size: .8em;
+}
+
+#italic {
+  font-size: inherit;
+  font-style: italic;
 }
 
 /* Nav style */
@@ -161,7 +166,7 @@ p {
   justify-content: flex-start;
   align-content: center;
   align-items: stretch;
-  padding: 12vh 8vh 4vh 8vh;
+  padding: 12vh 8vh 2vh 8vh;
 }
 
 .two-top-cont {
@@ -186,7 +191,7 @@ p {
 
 .two-bottom-cont {
   height: auto;
-  padding-top: 4vh;
+  padding-top: 2vh;
 }
 
 .typed-out {
@@ -550,14 +555,13 @@ div.text-content {
     font-size: 2vw;
   }
 
-  p {
-    font-size: .9em;
-  }
+ h2 {
+   font-size: .9em;
+ }
   /* End Global */
-
-  /* Section Two */
-  .two-bottom-cont {
-    padding-top: 2vh;
+  /* section two */
+  #section-two {
+    padding: 10vh 3vh 3vh 3vh;
   }
   /* End Section Two */
 }
@@ -570,7 +574,7 @@ div.text-content {
   }
 
   .MuiToolbar-root .MuiButton-root {
-    font-size: 2.4vw;
+    font-size: 2.5vw;
     min-width: 50px;
   }
 
@@ -593,7 +597,7 @@ div.text-content {
   }
 
   p {
-    font-size: 1.4em;
+    font-size: 1.5em;
   }
 
   .hvr-underline-from-left:hover:before {
@@ -679,18 +683,13 @@ div.text-content {
   }
 
   h2 {
-    font-size: 2.1em;
+    font-size: 2em;
   }
 
-  p {
-    font-size: 1.8em;
-  }
 /* End Global */
 
   /* Section Two */
-  #about-text {
-    text-align: left;
-  }
+ 
 
 /* Section Three */
   #section-three .MuiBox-root {
@@ -713,10 +712,14 @@ div.text-content {
   }
 
   h2 {
-    font-size: 2.2em;
+    font-size: 2.1em;
   }
   p {
-    font-size: 2.2em;
+    font-size: 1.9em;
+  }
+
+   #about-text {
+    text-align: left;
   }
 
   /* Section Three */
