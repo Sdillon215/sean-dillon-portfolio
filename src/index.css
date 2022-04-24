@@ -2,8 +2,6 @@ html,
 body {
   margin: 0px;
   padding: 0px;
-  height: 100%;
-  width: 100%;
   color: rgb(149, 134, 134);
   overflow: hidden;
 }
@@ -34,17 +32,15 @@ h3 {
 }
 
 p {
-  /* font-size: 1em; */
-  font-size: .8em;
-
+  font-size: .93em;
 }
 
 /* Nav style */
 .MuiBox-root .MuiPaper-root {
+  box-shadow: none;
   backdrop-filter: blur(2px) saturate(180%);
   -webkit-backdrop-filter: blur(1px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.85);
-  box-shadow: none;
 }
 
 .MuiPaper-root .MuiToolbar-root {
@@ -103,20 +99,6 @@ p {
   right: 0;
 }
 
-.page-contain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
-}
-
-.section {
-  height: 100%;
-  width: 100%;
-  display: flex;
-}
-
 /* Section one style */
 #first-section {
   background-image: url('assets/images/j-tree.jpg');
@@ -134,13 +116,10 @@ p {
   align-items: center;
 }
 
-
 #home-title {
   text-align: center;
   margin-top: 30vh;
 }
-
-
 
 .arrow {
   padding: 0;
@@ -215,7 +194,7 @@ p {
   white-space: nowrap;
   width: 0;
   animation:
-    typing 2s steps(20, end) forwards;
+    typing 2s steps(13, end) forwards;
   animation-delay: .6s;
 }
 
@@ -335,15 +314,12 @@ p {
   -moz-transform: scale(1.05);
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
-  /* -webkit-filter: blur(2px);
-  filter: blur(2px); */
 }
 
 div.text-content {
   backdrop-filter: blur(2px) saturate(180%);
   -webkit-backdrop-filter: blur(2px) saturate(180%);
   background-color: rgba(247, 248, 251, 0.9);
-  /* background-color:rgba(47, 72, 88, 0.8); */
   color: black;
   width: 100%;
   height: 100%;
@@ -354,11 +330,15 @@ div.text-content {
   text-align: center;
   opacity: 0;
   position: absolute;
+  visibility: hidden;
+  transition: visibility 0s, opacity .4s linear;
+  transition-delay: .1s;
 }
 
 .image-frame:hover div.text-content {
-  opacity: 1;
   z-index: 100;
+  opacity: 1;
+  visibility: visible;
 }
 
 .text-content p {
@@ -388,26 +368,6 @@ div.text-content {
 .btn:hover {
   background-color: #385567;
   color: rgb(247, 248, 251, 0.9);
-}
-
-/* Float Animation */
-.hvr-float {
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-
-.hvr-float:hover,
-.hvr-float:focus,
-.hvr-float:active {
-  -webkit-transform: translateY(-8px);
-  transform: translateY(-8px);
 }
 
 /* Section Three Style End */
@@ -510,6 +470,26 @@ div.text-content {
   to {
     transform: rotateY(-360deg);
   }
+}
+
+/* Icon Float Animation */
+.hvr-float {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
 }
 
 .contact-cont {
