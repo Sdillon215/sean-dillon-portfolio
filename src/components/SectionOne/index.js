@@ -11,7 +11,7 @@ const SectionOne = (props) => {
         <h1>SEAN DILLON</h1>
         <h2>Full Stack Dev | Climber | Desert Rat</h2>
       </div>
-      <Button sx={{ marginTop: "auto", marginBottom: "0" }} onClick={handleDownClick}>
+      <Button sx={{ marginTop: "auto", marginBottom: "0" }} onClick={handleDownClick}  aria-label="jump to next page">
         <KeyboardDoubleArrowDownIcon sx={{ fontSize: '8vw' }} className='arrow bounce' />
       </Button>
     </section>
