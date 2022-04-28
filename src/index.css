@@ -183,8 +183,14 @@ p {
   justify-content: center;
   height: 100vh;
   width: 50vw;
+}
+
+
+#about-text-cont h2,
+p {
   padding: 0 2vw 0 2vw;
 }
+
 /* End Section Two Style */
 
 /* Section Three Style */
@@ -405,7 +411,9 @@ div.text-content {
 }
 
 .contact-cont {
-  padding-bottom: 6vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .MuiBox-root .MuiOutlinedInput-root {
@@ -415,6 +423,7 @@ div.text-content {
   color: rgb(149, 134, 134);
   font-weight: bold;
   align-items: flex-start;
+  width: 75vw;
 }
 
 .btn-form {
@@ -438,6 +447,7 @@ div.text-content {
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(.5px);
 }
+
 /* End Section Four */
 
 /* Media Queries */
@@ -462,9 +472,6 @@ div.text-content {
     font-size: 2vw;
   }
   /* End Global */
-  /* section two */
-  
-  /* End Section Two */
 }
 
 @media only screen and (max-width: 820px) {
@@ -490,7 +497,7 @@ div.text-content {
   }
 
   h2 {
-    font-size: 1.7em;
+    font-size: 2em;
   }
 
   h3 {
@@ -522,7 +529,28 @@ div.text-content {
   /* End Global */
 
   /* Section Two */
-  
+  #section-two {
+    flex-direction: column;
+  }
+
+  #about-img-cont {
+    height: 50vh;
+    width: 100vw;
+  }
+
+  #about-text-cont {
+    justify-content: flex-start;
+    text-align: center;
+    height: 50vh;
+    width: 100vw;
+    padding-top: 2vw;
+  }
+
+  #about-text-cont h2,
+  p {
+    padding: 0 4vw 0 4vw;
+  }
+
   /* End Section Two */
 
   /* Section Three */
@@ -551,7 +579,7 @@ div.text-content {
     width: 17vw;
   }
 
-/* Fourth Section */
+  /* Fourth Section */
   .btn-form {
     font-size: 1.5em;
     width: 18vw;
@@ -570,16 +598,9 @@ div.text-content {
     min-width: 40px;
   }
 
-  h2 {
-    font-size: 2em;
-  }
+  /* End Global */
 
-/* End Global */
-
-  /* Section Two */
- 
-
-/* Section Three */
+  /* Section Three */
   #section-three .MuiBox-root {
     display: flex;
     flex-direction: column;
@@ -600,10 +621,11 @@ div.text-content {
   }
 
   h2 {
-    font-size: 2.2em;
+    font-size: 2.3em;
   }
+
   p {
-    font-size: 2.2em;
+    font-size: 1.9em;
   }
 
   /* Section Three */
@@ -614,9 +636,48 @@ div.text-content {
   }
 
   h3 {
-    font-size:1.9em;
+    font-size: 1.9em;
   }
+
   .text-content p {
     font-size: 1.5em;
   }
+}
+
+@media screen and (orientation: landscape) and (max-height: 600px) {
+  #section-two {
+    flex-direction: row;
+  }
+
+  #about-img-cont {
+    height: 100vh;
+    width: 50vw;
+  }
+
+  #about-text-cont {
+    justify-content: center;
+    height: 100vh;
+    width: 50vw;
+  }
+
+  #about-text-cont p {
+    font-size: .8em;
+  }
+
+  #fourth-section {
+    flex-direction: row;
+  }
+
+  .cube-cont {
+    width: 50vw;
+  }
+
+  .contact-cont {
+    width: 50vw;
+  }
+
+  .MuiBox-root .MuiOutlinedInput-root {
+    width: 40vw;
+  }
+  
 }
