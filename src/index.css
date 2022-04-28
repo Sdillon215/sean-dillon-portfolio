@@ -600,6 +600,14 @@ div.text-content {
 
   /* End Global */
 
+  /* section two */
+  #about-img-cont {
+    height: 47vh;
+  }
+
+  #about-text-cont {
+    height: 53vh;
+  }
   /* Section Three */
   #section-three .MuiBox-root {
     display: flex;
