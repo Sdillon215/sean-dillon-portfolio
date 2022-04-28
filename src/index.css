@@ -536,6 +536,20 @@ div.text-content {
 /* End Section Four */
 
 /* Media Queries */
+@media only screen and (min-width: 1400px) {
+  h1 {
+    font-size: 75px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 27px;
+  }
+}
+
 @media only screen and (max-width: 1025px) {
 
   /* Global */
