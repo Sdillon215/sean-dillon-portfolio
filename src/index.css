@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 h3 {
@@ -161,125 +161,30 @@ p {
   background-color: #385567;
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   box-sizing: border-box;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-content: center;
   align-items: stretch;
-  padding: 12vh 8vh 2vh 8vh;
 }
 
-.two-top-cont {
-  height: 26vw;
+#about-img-cont {
+  background-image: url('assets/images/gambler.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 50vw;
+}
+
+#about-text-cont {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 50vw;
+  padding: 0 2vw 0 2vw;
 }
-
-.about-card {
-  height: 26vw;
-  width: 26vw;
-}
-
-.about-card img {
-  width: 100%;
-  height: 100%;
-}
-
-.two-bottom-cont {
-  height: auto;
-  padding-top: 2vh;
-}
-
-.typed-out {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 0;
-  animation:
-    typing 3s steps(38, end) forwards;
-  animation-delay: .6s;
-}
-
-.type-cont {
-  display: inline-block;
-}
-
-#about-text {
-  text-align: justify;
-}
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-
-  to {
-    width: 100%
-  }
-}
-
-.fade-in-text {
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 /* End Section Two Style */
 
 /* Section Three Style */
@@ -558,9 +463,7 @@ div.text-content {
   }
   /* End Global */
   /* section two */
-  #section-two {
-    padding: 10vh 3vh 3vh 3vh;
-  }
+  
   /* End Section Two */
 }
 
@@ -619,20 +522,7 @@ div.text-content {
   /* End Global */
 
   /* Section Two */
-  #section-two {
-    padding: 10vh 2vh 2vh 2vh
-  }
-
-  .two-top-cont {
-    height: 30vw;
-
-  }
-
-  .about-card {
-    height: 30vw;
-    width: 30vw;
-  }
-
+  
   /* End Section Two */
 
   /* Section Three */
@@ -714,10 +604,6 @@ div.text-content {
   }
   p {
     font-size: 2.2em;
-  }
-
-   #about-text {
-    text-align: left;
   }
 
   /* Section Three */
