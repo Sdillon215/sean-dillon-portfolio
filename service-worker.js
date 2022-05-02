@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/sean-dillon-portfolio/precache-manifest.79d623b6f1693e3d090cd38319c7c67f.js"
+  "/sean-dillon-portfolio/precache-manifest.4ce5480cdf04964946f8afeb4831dc00.js"
 );
 
 workbox.clientsClaim();
