@@ -652,6 +652,18 @@ div.text-content {
   }
 }
 
+@media screen and (max-width: 380px) {
+  @media screen and (max-height: 670px) {
+    p {
+      font-size: 1.8em;
+    }
+
+    #about-text-cont {
+      padding-top: 1vw;
+    }
+  }
+}
+
 @media screen and (orientation: landscape) and (max-height: 600px) {
   #section-two {
     flex-direction: row;
@@ -671,7 +683,7 @@ div.text-content {
   #about-text-cont p {
     font-size: .8em;
   }
-
+   
   #fourth-section {
     flex-direction: row;
   }
