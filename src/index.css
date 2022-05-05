@@ -107,7 +107,7 @@ p {
 
 /* Section one style */
 #first-section {
-  background-image: url('assets/images/j-tree.jpg');
+  background-image: url('assets/images/j-tree.avif');
   box-sizing: border-box;
   position: relative;
   height: 100vh;
@@ -170,7 +170,7 @@ p {
 }
 
 #about-img-cont {
-  background-image: url('assets/images/gambler.jpg');
+  background-image: url('assets/images/gambler.avif');
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -292,7 +292,7 @@ div.text-content {
 
 /* Section Four Style */
 #fourth-section {
-  background-image: url('assets/images/redRockSun.jpg');
+  background-image: url('assets/images/redRockSun.avif');
   height: 100vh;
   box-sizing: border-box;
   position: relative;
