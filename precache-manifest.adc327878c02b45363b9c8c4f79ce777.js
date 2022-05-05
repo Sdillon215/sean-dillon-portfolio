@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/static/media/book.e5b9230c.png"
   },
   {
-    "revision": "9ecd19600d0474e7b619c916382e2505",
+    "revision": "cb6ff64b24d9c32b1d57b108f996ac79",
     "url": "/index.html"
   }
 ];
