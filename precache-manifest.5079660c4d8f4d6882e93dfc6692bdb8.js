@@ -1,31 +1,31 @@
 self.__precacheManifest = [
   {
-    "revision": "fa0b3a9e798ecc439866",
-    "url": "/static/css/main.78e408eb.chunk.css"
+    "revision": "467370960ab769243b06",
+    "url": "/static/css/main.4bf93bf2.chunk.css"
   },
   {
-    "revision": "fa0b3a9e798ecc439866",
-    "url": "/static/js/main.4c41f205.chunk.js"
+    "revision": "467370960ab769243b06",
+    "url": "/static/js/main.56101713.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "fe29f662cde321de29bd",
-    "url": "/static/js/2.3e8317a3.chunk.js"
+    "revision": "307d650541c748c56268",
+    "url": "/static/js/2.b31a7a4e.chunk.js"
   },
   {
-    "revision": "6e0dacad909117e928082cc17d77470d",
-    "url": "/static/media/gambler.6e0dacad.jpg"
+    "revision": "126d40850433f02ba351e453d1698d10",
+    "url": "/static/media/gambler.126d4085.avif"
   },
   {
-    "revision": "db5b1936dc0e069fff63063fd41b4b26",
-    "url": "/static/media/j-tree.db5b1936.jpg"
+    "revision": "e7ae88dc87c827f9c9666745f8f33f3b",
+    "url": "/static/media/j-tree.e7ae88dc.avif"
   },
   {
-    "revision": "9023e731ca09664bde60c04bc6a21818",
-    "url": "/static/media/redRockSun.9023e731.jpg"
+    "revision": "ed8a7a0e53e2dc3e29f3dfcc3e2ad089",
+    "url": "/static/media/redRockSun.ed8a7a0e.avif"
   },
   {
     "revision": "9eb17ee361cafd7c6d8c2308dddc44bb",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/static/media/book.e5b9230c.png"
   },
   {
-    "revision": "cb6ff64b24d9c32b1d57b108f996ac79",
+    "revision": "16e60a9ed1ae2b58ae7861ae1e2dc8a0",
     "url": "/index.html"
   }
 ];
