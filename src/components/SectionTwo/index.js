@@ -8,7 +8,7 @@ function SectionTwo(props) {
         <section id="section-two">
             <BackgroundImage
                 useChild
-                lazyLoading
+                lazyLoad
                 src={Gambler}
             >
                 <div id="about-img-cont">

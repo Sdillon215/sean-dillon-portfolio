@@ -4,3 +4,4 @@ export const EzBud = require('./ez-budget.png');
 export const Book = require('./book.png');
 export const Jtree = require('./j-tree.avif');
 export const Gambler = require('./gambler.avif');
+export const RedSun = require('./redRockSun.avif');
