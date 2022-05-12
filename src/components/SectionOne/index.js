@@ -1,5 +1,5 @@
 import React from 'react';
-import { BackgroundImage } from 'react-image-and-background-image-fade'
+import { BackgroundImage } from 'react-image-and-background-image-fade';
 import { Jtree } from '../../assets/images';
 import Button from '@mui/material/Button';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
