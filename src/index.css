@@ -106,11 +106,11 @@ p {
 }
 
 /* Section one style */
-#first-section {
-  background-image: url('assets/images/j-tree.avif');
+.first-section {
   box-sizing: border-box;
   position: relative;
   height: 100vh;
+  width: 100vw;
   overflow: hidden;
   background-position: center;
   background-size: cover;
